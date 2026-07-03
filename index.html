@@ -1,67 +1,208 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUA — Disseny Universal de l'Aprenentatge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="light">
+  <div class="container py-4">
 
-    <title>Qüestionari DUA</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-
-<div class="container mt-5">
-
-    <!-- Títol -->
-    <h1 class="mb-4 text-center">
-        Qüestionari sobre el Disseny Universal de l'Aprenentatge
-    </h1>
-
-    <!-- Pregunta -->
-    <div class="card p-4">
-        <h5 class="mb-3">
-    <meta charset="UTF-8">
-    <meta Disseny Universal de l'Aprenentatge (DUA)?    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        </h5>
-
-        <!-- Respostes -->
-        <form>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="pregunta1" id="opt1">
-                <label class="form-check-label" for="opt1">
-                    Proporcionar múltiples formes de representació
-                </label>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="pregunta1" id="opt2">
-                <label class="form-check-label" for="opt2">
-                    Fer un únic tipus d’examen
-                </label>
-            </div>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="pregunta1" id="opt3">
-                <label class="form-check-label" for="opt3">
-                    Utilitzar només llibres de text
-                </label>
-            </div>
-
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="pregunta1" id="opt4">
-                <label class="form-check-label" for="opt4">
-                    Evitar l'ús de tecnologia a l'aula
-                </label>
-            </div>
-
-            <!-- Botó -->
-            <button type="button" class="btn btn-primary">
-                CORREGIR
-            </button>
-        </form>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1><i class="bi bi-universal-access-circle me-2"></i>Disseny Universal de l'Aprenentatge</h1>
+      <button id="themeToggle" class="btn" aria-label="Canvia el tema">
+        <i class="bi bi-moon-fill"></i>
+      </button>
     </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-tab="teoria" role="tab" aria-selected="true">
+          <i class="bi bi-book me-1"></i>Teoria
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-tab="quiz" role="tab" aria-selected="false">
+          <i class="bi bi-pencil-square me-1"></i>Qüestionari
+        </button>
+      </li>
+    </ul>
+
+    <!-- ======================== -->
+    <!-- TAB: TEORIA              -->
+    <!-- ======================== -->
+    <div id="tab-teoria" class="tab-content active">
+
+      <!-- Introducció -->
+      <section class="intro-card mt-4">
+        <h2>Què és el DUA?</h2>
+        <p>
+          El <strong>Disseny Universal de l'Aprenentatge</strong> (DUA) és un marc educatiu basat en la investigació
+          neurocientífica que guia el disseny d'entorns, materials i pràctiques d'ensenyament flexibles per
+          adaptar-se a la diversitat d'estudiants. Desenvolupat per <strong>CAST</strong> (Center for Applied
+          Special Technology), el DUA parteix de la premissa que no existeix un «estudiant mitjà» i que el
+          currículum s'ha de dissenyar per ser <strong>accessible per a tothom</strong> des del principi,
+          reduint les barreres i maximitzant les oportunitats d'aprenentatge.
+        </p>
+      </section>
+
+      <!-- Tres principis -->
+      <h2 class="mb-3">Els tres principis del DUA</h2>
+      <div class="row g-4 mb-4">
+
+        <!-- Representació -->
+        <div class="col-md-4">
+          <div class="principle-card">
+            <i class="bi bi-eye-fill principle-icon"></i>
+            <h3>Representació</h3>
+            <div class="subtitle">El QUÈ de l'aprenentatge</div>
+            <div class="brain-network">Xarxes de reconeixement</div>
+            <p>Proporcionar múltiples formes de representació de la informació per donar resposta a les diferències en com l'alumnat percep i comprèn.</p>
+            <ul>
+              <li>Opcions de percepció</li>
+              <li>Opcions de llenguatge i símbols</li>
+              <li>Opcions de comprensió</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Acció i Expressió -->
+        <div class="col-md-4">
+          <div class="principle-card">
+            <i class="bi bi-hand-index-thumb-fill principle-icon"></i>
+            <h3>Acció i Expressió</h3>
+            <div class="subtitle">El COM de l'aprenentatge</div>
+            <div class="brain-network">Xarxes estratègiques</div>
+            <p>Oferir múltiples formes d'interacció i expressió perquè cada estudiant pugui demostrar el seu aprenentatge de la manera que li sigui més accessible.</p>
+            <ul>
+              <li>Opcions d'acció física</li>
+              <li>Opcions d'expressió i comunicació</li>
+              <li>Opcions de funció executiva</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Compromís -->
+        <div class="col-md-4">
+          <div class="principle-card">
+            <i class="bi bi-heart-fill principle-icon"></i>
+            <h3>Compromís</h3>
+            <div class="subtitle">El PER QUÈ de l'aprenentatge</div>
+            <div class="brain-network">Xarxes afectives</div>
+            <p>Oferir múltiples formes d'implicació i motivació per connectar amb els interessos i les emocions de cada estudiant.</p>
+            <ul>
+              <li>Opcions per captar l'interès</li>
+              <li>Opcions per mantenir l'esforç</li>
+              <li>Opcions per a l'autoregulació</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pautes -->
+      <section class="intro-card">
+        <h2>Pautes DUA (CAST, 2018)</h2>
+        <p>
+          Les pautes DUA ofereixen recomanacions concretes per implementar cada principi a l'aula.
+          Estan organitzades en una xarxa ampliable i detallada que parteix dels tres principis fonamentals
+          i es desplega en <strong>9 pautes</strong> i <strong>31 punts de verificació</strong>.
+        </p>
+        <div class="guidelines-grid mt-3">
+          <div class="guideline-item">
+            <h4><i class="bi bi-1-circle me-1"></i> Percepció</h4>
+            <p>Oferir informació a través de múltiples sentits (visual, auditiva, tàctil).</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-2-circle me-1"></i> Llenguatge i símbols</h4>
+            <p>Aclarir vocabulari, símbols i estructures complexes.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-3-circle me-1"></i> Comprensió</h4>
+            <p>Guiar el processament de la informació i la transferència de coneixement.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-4-circle me-1"></i> Acció física</h4>
+            <p>Permetre diferents formes d'interacció amb els materials.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-5-circle me-1"></i> Expressió i comunicació</h4>
+            <p>Oferir eines i formats diversos per comunicar idees.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-6-circle me-1"></i> Funció executiva</h4>
+            <p>Donar suport a la planificació, l'organització i l'autoavaluació.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-7-circle me-1"></i> Captar l'interès</h4>
+            <p>Connectar amb els interessos individuals i l'autenticitat de les tasques.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-8-circle me-1"></i> Mantenir l'esforç</h4>
+            <p>Establir objectius clars i oferir reptes adequats i retroalimentació.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-9-circle me-1"></i> Autoregulació</h4>
+            <p>Desenvolupar habilitats per gestionar les emocions i la motivació pròpia.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======================== -->
+    <!-- TAB: QÜESTIONARI         -->
+    <!-- ======================== -->
+    <div id="tab-quiz" class="tab-content">
+
+      <section class="intro-card mt-4">
+        <h2>Qüestionari per a docents</h2>
+        <p>Respon les 10 preguntes següents per posar a prova els teus coneixements sobre el Disseny Universal de l'Aprenentatge.</p>
+      </section>
+
+      <!-- Progrés -->
+      <div id="quiz-progress">
+        <div class="progress-text">
+          <span>0 de 10 respondes</span>
+          <span>0%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Preguntes -->
+      <div id="quiz-questions"></div>
+
+      <!-- Botons -->
+      <div class="d-grid gap-2 mt-4">
+        <button id="submitQuiz" class="btn btn-primary btn-lg">
+          <i class="bi bi-check-lg me-1"></i>Corregir qüestionari
+        </button>
+        <button id="resetQuiz" class="btn btn-outline-primary btn-lg" style="display: none;">
+          <i class="bi bi-arrow-counterclockwise me-1"></i>Tornar a intentar
+        </button>
+      </div>
+
+      <!-- Resultat -->
+      <div id="quiz-result">
+        <div class="score" id="score-value">—</div>
+        <div class="score-label" id="score-label">0 de 10 encertades</div>
+        <div>
+          <span class="score-message" id="score-message"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
