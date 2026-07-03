@@ -1,3 +1,9 @@
+
+# Comença mirant el producte creat
+
+[https://inclusaedu.github.io/DUA/](https://inclusaedu.github.io/DUA/)
+
+
 # DUA
 Col·lecció de continguts per posar a prova el coneixement sobre Disseny Universal de l'Aprenentatge.
 
@@ -50,3 +56,21 @@ Per tal de començar farem un plan:
 - Disseny responsive per a mòbils
 - Botó "Tornar a intentar" per reiniciar el qüestionari
 
+# Desenvolupat amb IA
+
+1. Orquestador utilitzat: [OpenCode.ai](https://opencode.ai/)
+2. Ens baixem el paquet `curl -fsSL https://opencode.ai/install | bash`
+3. Cal elegir una IA, elegim Zen, ja que és gratuïta. Ho fem tancant la terminal per tal que tinga en conte la instal·lació i utilitzem el caracter `/` per tal l'elegir el model, en aquest cas Zen.
+4. Com que ens hem loguejat amb **Zen** mitjançant una `passkey` generada, escanegem amb Microsoft Authenticator el qr de la `passkey` i ens demana associar-ho a l'usuari de **Microsoft Authenticator** amb el compte de **GitHub** que hem obert per fer al curset en **Github Education**.
+5. Obrim la terminal a la carpeta del nostre projecte local de Github, en aquest cas `DUA`.
+6. Obrim OpenCode escrivint això mateix al terminal.
+7. Amb el tabulador elegim la paraula `Plan` i li proposem el que cal desenvolupar. Ho escrivim al terminal.
+8. Ens desenvolupa el plan i el deixa a la terminal, a la sessió de Zen. Podrem recuperar-ho deperès escrivint `/session` i elegint la sessió que hem creat anteriorment.
+9. Amb el tabulador elegim la paraula `Build` per tal que construisca el projecte.
+
+El resultat és un projecte de 3 arxius:
+- `index.html`
+- `style.css`
+- `script.js`
+
+Es pot accedir al projecte amb aquesta url: [https://inclusaedu.github.io/DUA/](https://inclusaedu.github.io/DUA/)
