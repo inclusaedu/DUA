@@ -1005,6 +1005,197 @@ p {
 }
 
 /* Responsive */
+/* ============================= */
+/* DUA 3.0 tab                   */
+/* ============================= */
+
+.principle-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.principle-section[data-principle="representacio"] {
+  border-left: 4px solid #2b6cb0;
+}
+
+.principle-section[data-principle="accio"] {
+  border-left: 4px solid #2f855a;
+}
+
+.principle-section[data-principle="compromis"] {
+  border-left: 4px solid #c05621;
+}
+
+[data-theme="dark"] .principle-section {
+  background: var(--surface);
+}
+
+.dua30-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.guideline-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  transition: all var(--transition);
+  position: relative;
+}
+
+.guideline-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.guideline-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.guideline-card > p {
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.horizontal-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.access-badge {
+  background: rgba(43, 108, 176, 0.12);
+  color: #2b6cb0;
+}
+
+.support-badge {
+  background: rgba(47, 133, 90, 0.12);
+  color: #2f855a;
+}
+
+.exec-badge {
+  background: rgba(192, 86, 33, 0.12);
+  color: #c05621;
+}
+
+[data-theme="dark"] .access-badge {
+  background: rgba(110, 168, 254, 0.15);
+  color: #7fb8e8;
+}
+
+[data-theme="dark"] .support-badge {
+  background: rgba(104, 211, 145, 0.15);
+  color: #68d391;
+}
+
+[data-theme="dark"] .exec-badge {
+  background: rgba(246, 173, 85, 0.15);
+  color: #f6ad55;
+}
+
+.consideration-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.consideration-item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+
+.consideration-item:last-child {
+  border-bottom: none;
+}
+
+.cons-number {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 0.75rem;
+  width: 1.8rem;
+  text-align: right;
+}
+
+.cons-text {
+  flex: 1;
+  line-height: 1.4;
+}
+
+/* Summary grid */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.summary-item {
+  text-align: center;
+  padding: 1.25rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.summary-item:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.summary-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.summary-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.summary-label small {
+  font-size: 0.75rem;
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive for DUA 3.0 tab */
+@media (max-width: 768px) {
+  .dua30-grid {
+    grid-template-columns: 1fr;
+  }
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
