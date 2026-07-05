@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUA — Disseny Universal de l'Aprenentatge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <div class="container py-4">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1><i class="bi bi-universal-access-circle me-2"></i>Disseny Universal de l'Aprenentatge</h1>
+      <button id="themeToggle" class="btn" aria-label="Canvia el tema">
+        <i class="bi bi-moon-fill"></i>
+      </button>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-tab="teoria" role="tab" aria-selected="true">
+          <i class="bi bi-book me-1"></i>Teoria
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-tab="comparativa" role="tab" aria-selected="false">
+          <i class="bi bi-arrow-left-right me-1"></i>DUA 2.0 vs 3.0
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-tab="dua30" role="tab" aria-selected="false">
+          <i class="bi bi-3-square-fill me-1"></i>DUA 3.0
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-tab="exemples" role="tab" aria-selected="false">
+          <i class="bi bi-building me-1"></i>Exemples
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-tab="quiz" role="tab" aria-selected="false">
+          <i class="bi bi-pencil-square me-1"></i>Qüestionari
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-tab="bibliografia" role="tab" aria-selected="false">
+          <i class="bi bi-bookmarks me-1"></i>Bibliografia
+        </button>
+      </li>
+    </ul>
+
+    <!-- ======================== -->
+    <!-- TAB: TEORIA              -->
+    <!-- ======================== -->
+    <div id="tab-teoria" class="tab-content active">
+
+      <!-- Introducció -->
+      <section class="intro-card mt-4">
+        <h2>Què és el DUA?</h2>
+        <p>
+          El <strong>Disseny Universal de l'Aprenentatge</strong> (DUA) és un marc educatiu basat en la investigació
+          neurocientífica que guia el disseny d'entorns, materials i pràctiques d'ensenyament flexibles per
+          adaptar-se a la diversitat d'estudiants. Desenvolupat per <strong>CAST</strong> (Center for Applied
+          Special Technology), el DUA parteix de la premissa que no existeix un «estudiant mitjà» i que el
+          currículum s'ha de dissenyar per ser <strong>accessible per a tothom</strong> des del principi,
+          reduint les barreres i maximitzant les oportunitats d'aprenentatge.
+        </p>
+      </section>
+
+      <!-- Tres principis -->
+      <h2 class="mb-3">Els tres principis del DUA</h2>
+      <div class="row g-4 mb-4">
+
+        <!-- Representació -->
+        <div class="col-md-4">
+          <div class="principle-card">
+            <i class="bi bi-eye-fill principle-icon"></i>
+            <h3>Representació</h3>
+            <div class="subtitle">El QUÈ de l'aprenentatge</div>
+            <div class="brain-network">Xarxes de reconeixement</div>
+            <p>Proporcionar múltiples formes de representació de la informació per donar resposta a les diferències en com l'alumnat percep i comprèn.</p>
+            <ul>
+              <li>Opcions de percepció</li>
+              <li>Opcions de llenguatge i símbols</li>
+              <li>Opcions de comprensió</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Acció i Expressió -->
+        <div class="col-md-4">
+          <div class="principle-card">
+            <i class="bi bi-hand-index-thumb-fill principle-icon"></i>
+            <h3>Acció i Expressió</h3>
+            <div class="subtitle">El COM de l'aprenentatge</div>
+            <div class="brain-network">Xarxes estratègiques</div>
+            <p>Oferir múltiples formes d'interacció i expressió perquè cada estudiant pugui demostrar el seu aprenentatge de la manera que li sigui més accessible.</p>
+            <ul>
+              <li>Opcions d'acció física</li>
+              <li>Opcions d'expressió i comunicació</li>
+              <li>Opcions de funció executiva</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Compromís -->
+        <div class="col-md-4">
+          <div class="principle-card">
+            <i class="bi bi-heart-fill principle-icon"></i>
+            <h3>Compromís</h3>
+            <div class="subtitle">El PER QUÈ de l'aprenentatge</div>
+            <div class="brain-network">Xarxes afectives</div>
+            <p>Oferir múltiples formes d'implicació i motivació per connectar amb els interessos i les emocions de cada estudiant.</p>
+            <ul>
+              <li>Opcions per captar l'interès</li>
+              <li>Opcions per mantenir l'esforç</li>
+              <li>Opcions per a l'autoregulació</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pautes -->
+      <section class="intro-card">
+        <h2>Pautes DUA (CAST, 2018)</h2>
+        <p>
+          Les pautes DUA ofereixen recomanacions concretes per implementar cada principi a l'aula.
+          Estan organitzades en una xarxa ampliable i detallada que parteix dels tres principis fonamentals
+          i es desplega en <strong>9 pautes</strong> i <strong>31 punts de verificació</strong>.
+        </p>
+        <div class="guidelines-grid mt-3">
+          <div class="guideline-item">
+            <h4><i class="bi bi-1-circle me-1"></i> Percepció</h4>
+            <p>Oferir informació a través de múltiples sentits (visual, auditiva, tàctil).</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-2-circle me-1"></i> Llenguatge i símbols</h4>
+            <p>Aclarir vocabulari, símbols i estructures complexes.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-3-circle me-1"></i> Comprensió</h4>
+            <p>Guiar el processament de la informació i la transferència de coneixement.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-4-circle me-1"></i> Acció física</h4>
+            <p>Permetre diferents formes d'interacció amb els materials.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-5-circle me-1"></i> Expressió i comunicació</h4>
+            <p>Oferir eines i formats diversos per comunicar idees.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-6-circle me-1"></i> Funció executiva</h4>
+            <p>Donar suport a la planificació, l'organització i l'autoavaluació.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-7-circle me-1"></i> Captar l'interès</h4>
+            <p>Connectar amb els interessos individuals i l'autenticitat de les tasques.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-8-circle me-1"></i> Mantenir l'esforç</h4>
+            <p>Establir objectius clars i oferir reptes adequats i retroalimentació.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-9-circle me-1"></i> Autoregulació</h4>
+            <p>Desenvolupar habilitats per gestionar les emocions i la motivació pròpia.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======================== -->
+    <!-- TAB: QÜESTIONARI         -->
+    <!-- ======================== -->
+    <div id="tab-quiz" class="tab-content">
+
+      <section class="intro-card mt-4">
+        <h2>Qüestionari per a docents</h2>
+        <p>Respon les 10 preguntes següents per posar a prova els teus coneixements sobre el Disseny Universal de l'Aprenentatge.</p>
+      </section>
+
+      <!-- Progrés -->
+      <div id="quiz-progress">
+        <div class="progress-text">
+          <span>0 de 10 respondes</span>
+          <span>0%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- Preguntes -->
+      <div id="quiz-questions"></div>
+
+      <!-- Botons -->
+      <div class="d-grid gap-2 mt-4">
+        <button id="submitQuiz" class="btn btn-primary btn-lg">
+          <i class="bi bi-check-lg me-1"></i>Corregir qüestionari
+        </button>
+        <button id="resetQuiz" class="btn btn-outline-primary btn-lg" style="display: none;">
+          <i class="bi bi-arrow-counterclockwise me-1"></i>Tornar a intentar
+        </button>
+      </div>
+
+      <!-- Resultat -->
+      <div id="quiz-result">
+        <div class="score" id="score-value">—</div>
+        <div class="score-label" id="score-label">0 de 10 encertades</div>
+        <div>
+          <span class="score-message" id="score-message"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================== -->
+    <!-- TAB: EXEMPLES PRÀCTICS   -->
+    <!-- ======================== -->
+    <div id="tab-exemples" class="tab-content">
+
+      <!-- Capçalera del centre -->
+      <section class="school-header mt-4">
+        <div class="school-header-content">
+          <div class="school-icon">
+            <i class="bi bi-building"></i>
+          </div>
+          <div>
+            <h2>CEE Carmen Picó</h2>
+            <p class="school-subtitle">+40 anys dedicats a l'educació especial · Alzira · València</p>
+            <p>
+              El <strong>Centre d'Educació Especial Carmen Picó</strong> és un centre
+              públic comarcal de la Generalitat Valenciana que atén infants i joves
+              amb discapacitat intel·lectual, trastorns de salut mental i/o de conducta, i necessitats
+              educatives especials. El centre aplica el <strong>model DUA 3.0</strong> com a eix
+              vertebrador de la seva metodologia educativa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Citació DUA 3.0 -->
+      <section class="quote-card">
+        <i class="bi bi-quote"></i>
+        <blockquote>
+          La metodologia es fonamenta en un enfocament constructivista i en l'aplicació del model
+          <strong>DUA 3.0 (Disseny Universal per a l'Aprenentatge)</strong>, que permet dissenyar
+          situacions d'aprenentatge flexibles, accessibles i ajustades a la diversitat de l'alumnat.
+        </blockquote>
+        <cite>— Projecte Educatiu de Centre, CEE Carmen Picó</cite>
+      </section>
+
+      <!-- Exemples per principi: Representació -->
+      <h2 class="principle-heading" data-principle="representacio">
+          <i class="bi bi-eye-fill"></i> Representació — El QUÈ de l'aprenentatge
+      </h2>
+      <p class="principle-desc">Proporcionar múltiples formes de representar la informació perquè tot l'alumnat pugui accedir als continguts.</p>
+      <div class="examples-grid">
+          <div class="example-card" data-principle="representacio">
+              <i class="example-icon bi bi-chat-dots"></i>
+          <h4>Pictogrames i suports visuals</h4>
+          <p>Ús de sistemes augmentatius i alternatius de comunicació (SAAC) amb pictogrames, horaris visuals i seqüències il·lustrades per facilitar la comprensió.</p>
+        </div>
+        <div class="example-card" data-principle="representacio">
+          <i class="example-icon bi bi-ear"></i>
+          <h4>Materials multisensorials</h4>
+          <p>Aprenentatge a través de múltiples canals sensorials: materials tàctils, auditius, visuals i manipulables adaptats a cada perfil d'alumnat.</p>
+        </div>
+        <div class="example-card" data-principle="representacio">
+          <i class="example-icon bi bi-chat-dots"></i>
+          <h4>Logopèdia i comunicació</h4>
+          <p>Suport logopèdic individualitzat per treballar la comprensió i expressió del llenguatge, amb eines adaptades a les necessitats de cada alumne.</p>
+        </div>
+        <div class="example-card" data-principle="representacio">
+          <i class="example-icon bi bi-book"></i>
+          <h4>Materials adaptats</h4>
+          <p>Elaboració de materials didàctics en formats accessibles: lletra gran, àudio, lectura fàcil, color codificat i suports digitals interactius.</p>
+        </div>
+      </div>
+
+      <!-- Exemples per principi: Acció i Expressió -->
+      <h2 class="principle-heading" data-principle="accio">
+        <i class="bi bi-hand-index-thumb-fill"></i> Acció i Expressió — El COM de l'aprenentatge
+      </h2>
+      <p class="principle-desc">Oferir múltiples formes d'interacció i expressió perquè cada estudiant demostri el seu aprenentatge.</p>
+      <div class="examples-grid">
+        <div class="example-card" data-principle="accio">
+          <i class="example-icon bi bi-tools"></i>
+          <h4>Tallers pràctics</h4>
+          <p>Tallers de cuina, i jardineria on l'alumnat desenvolupa habilitats motrius, cognitives i socials en contextos reals.</p>
+        </div>
+        <div class="example-card" data-principle="accio">
+          <i class="example-icon bi bi-broadcast"></i>
+          <h4>Ràdio escolar «Pocast puntualsr»</h4>
+          <p>Entrevistes a persones que venen al centre per desenvolupar un projecte on els alumnes treballen l'expressió oral, la creativitat i el treball en equip.</p>
+        </div>
+        <div class="example-card" data-principle="accio">
+          <i class="example-icon bi bi-briefcase"></i>
+          <h4>Pràctiques laborals</h4>
+          <p>Programa de pràctiques en entorns laborals reals, inclòs el Centre Especial de Treball (CET) del propi centre, per adquirir habilitats professionals.</p>
+        </div>
+        <div class="example-card" data-principle="accio">
+          <i class="example-icon bi bi-water"></i>
+          <h4>Aula Sensorial</h4>
+          <p>Teràpies sensorials on es té en compte el perfil sensorial de l'alumnat estimulant formes d'interacció adients a les seues necessitats que combinen l'activitat física amb el treball d'habilitats motrius, sensorials i emocionals.</p>
+        </div>
+      </div>
+
+      <!-- Exemples per principi: Compromís -->
+      <h2 class="principle-heading" data-principle="compromis">
+        <i class="bi bi-heart-fill"></i> Compromís — El PER QUÈ de l'aprenentatge
+      </h2>
+      <p class="principle-desc">Oferir múltiples formes d'implicació i motivació per connectar amb els interessos de cada estudiant.</p>
+      <div class="examples-grid">
+        <div class="example-card" data-principle="compromis">
+          <i class="example-icon bi bi-trophy"></i>
+          <h4>Premis i concursos</h4>
+          <p>Concurs d'espressió artística que fomenta la creativitat, el treball cooperatiu i el gust per la literatura, amb reconeixement públic dels participants.</p>
+        </div>
+        <div class="example-card" data-principle="compromis">
+          <i class="example-icon bi bi-calendar-event"></i>
+          <h4>Festes i tradicions</h4>
+          <p>Celebració de les festes del nostre entorn al centre, 9 d'octubre, castanyera, Nadal, Carnestolte, Falles, Pasqua i Final de Curs, que reforcen el sentiment de comunitat i pertinença.</p>
+        </div>
+        <div class="example-card" data-principle="compromis">
+          <i class="example-icon bi bi-tree"></i>
+          <h4>Sortides i colònies</h4>
+          <p>Eixides pedagògiques a l'entorn pròxim i activitats a l'aire lliure que connecten l'aprenentatge amb l'entorn natural i social.</p>
+        </div>
+        <div class="example-card" data-principle="compromis">
+          <i class="example-icon bi bi-globe2"></i>
+          <h4>Compromís europeu</h4>
+          <p>Participació en iniciatives Erasmus+ per tal de capacitar les persones i les organitzacions per créixer, connectar i donar forma al seu futur a tot Europa i més enllà.</p>
+        </div>
+      </div>
+
+      <!-- Etapes educatives -->
+      <section class="intro-card mt-4">
+        <h2>Etapes educatives</h2>
+        <p>El centre ofereix un itinerari formatiu complet que aplica el DUA 3.0 a cada etapa, garantint la continuïtat i la progressió de l'alumnat.</p>
+        <div class="stages-grid">
+          <div class="stage-card">
+            <div class="stage-icon"><i class="bi bi-people"></i></div>
+            <h4>Educació Infantil</h4>
+            <p>Estimulació primerenca, comunicació i habilitats socials amb suport multisensorial.</p>
+          </div>
+          <div class="stage-card">
+            <div class="stage-icon"><i class="bi bi-book"></i></div>
+            <h4>Educació Primària</h4>
+            <p>Aprenentatge competencial amb materials accessibles i metodologies actives.</p>
+          </div>
+          <div class="stage-card">
+            <div class="stage-icon"><i class="bi bi-mortarboard"></i></div>
+            <h4>ESO</h4>
+            <p>Formació secundària amb orientació acadèmica i projectes pràctics.</p>
+          </div>
+          <div class="stage-card">
+            <div class="stage-icon"><i class="bi bi-briefcase"></i></div>
+            <h4>TVA</h4>
+            <p>Transició a la Vida Adulta amb pràctiques laborals i autonomia personal.</p>
+          </div>
+          <div class="stage-card">
+            <div class="stage-icon"><i class="bi bi-gear"></i></div>
+            <h4>PFQB</h4>
+            <p>Programes de Formació de Qualificació Bàsica Adaptada, els quals fomenten la inserció laboral i social.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serveis especialitzats -->
+      <section class="intro-card">
+        <h2>Serveis especialitzats</h2>
+        <p>El DUA es complementa amb serveis de suport individualitzat que garanteixen l'accessibilitat universal.</p>
+        <div class="guidelines-grid">
+          <div class="guideline-item">
+            <h4><i class="bi bi-brain me-1"></i> Psicopedagogia</h4>
+            <p>Avaluació i orientació educativa, suport emocional i assessorament a les famílies.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-person-walking me-1"></i> Fisioteràpia</h4>
+            <p>Rehabilitació motriu, estimulació sensorial i treball de la psicomotricitat.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-chat me-1"></i> Logopèdia</h4>
+            <p>Suport a la comunicació oral i escrita, sistemes alternatius i augmentatius.</p>
+          </div>
+          <div class="guideline-item">
+            <h4><i class="bi bi-people me-1"></i> Treball social</h4>
+            <p>Acompanyament a les famílies, coordinació amb serveis externs i recursos comunitaris.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======================== -->
+    <!-- TAB: DUA 2.0 vs 3.0     -->
+    <!-- ======================== -->
+    <div id="tab-comparativa" class="tab-content">
+
+      <!-- Introducció -->
+      <section class="intro-card mt-4">
+        <h2><i class="bi bi-arrow-left-right me-2"></i>DUA 2.0 vs DUA 3.0</h2>
+        <p>
+          El <strong>Disseny Universal de l'Aprenentatge</strong> no és un marc estàtic: evoluciona amb la recerca
+          i la pràctica docent. El <strong>30 de juliol de 2024</strong>, CAST va publicar la versió 3.0 de les
+          pautes DUA, la revisió més profunda des de la versió 2.0 (2011). Aquesta actualització incorpora anys
+          de recerca en neurociència, educació inclusiva, pedagogies culturalment sostenibles i veus de
+          professionals i investigadors de tot el món.
+        </p>
+      </section>
+
+      <!-- DUA 2.0 -->
+      <section class="intro-card">
+        <h2><i class="bi bi-2-square me-2"></i>DUA 2.0 / 2.2 (2008–2018)</h2>
+        <p>
+          El marc DUA 2.0, publicat per CAST el 2008 i actualitzat a la versió 2.2 el 2018, va establir les bases
+          del que avui entenem com a disseny universal per a l'aprenentatge. El seu objectiu era desenvolupar
+          <strong>aprenents experts</strong>: estudiants amb recursos i coneixements, estratègics i orientats
+          a objectius, i decidits i motivats.
+        </p>
+        <div class="version-grid">
+          <div class="version-card">
+            <div class="version-title">Objectiu</div>
+            <p>Desenvolupar <strong>aprenents experts</strong></p>
+          </div>
+          <div class="version-card">
+            <div class="version-title">Estructura</div>
+            <p>3 principis · 9 pautes · <strong>31 punts de verificació</strong></p>
+          </div>
+          <div class="version-card">
+            <div class="version-title">Preguntes</div>
+            <p>Què? (Representació) · Com? (Acció) · Per què? (Compromís)</p>
+          </div>
+          <div class="version-card">
+            <div class="version-title">Llenguatge</div>
+            <p>«Proporcionar opcions per a...» — centrat en el docent</p>
+          </div>
+          <div class="version-card">
+            <div class="version-title">Funció executiva</div>
+            <p>Pauta 6 dins d'Acció i Expressió</p>
+          </div>
+          <div class="version-card">
+            <div class="version-title">Barreres</div>
+            <p>Físiques i curriculars</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DUA 3.0 -->
+      <section class="intro-card">
+        <h2><i class="bi bi-3-square me-2"></i>DUA 3.0 (2024)</h2>
+        <p>
+          La versió 3.0 representa un <strong>canvi de paradigma</strong>. L'objectiu ja no és formar «aprenents
+          experts» sinó cultivar l'<strong>agentivitat de l'aprenent</strong> (learner agency): estudiants
+          amb propòsit i reflexius, enginyosos i autèntics, estratègics i orientats a l'acció. El canvi
+          fonamental és la incorporació del <strong>QUI</strong> de l'aprenentatge: la identitat com a part
+          central de la variabilitat humana.
+        </p>
+        <div class="version-grid">
+          <div class="version-card highlight">
+            <div class="version-title">Objectiu</div>
+            <p><strong>Agentivitat de l'aprenent</strong> (learner agency)</p>
+          </div>
+          <div class="version-card highlight">
+            <div class="version-title">Estructura</div>
+            <p>3 principis · 9 pautes · <strong>35 consideracions</strong> (abans punts de verificació)</p>
+          </div>
+          <div class="version-card highlight">
+            <div class="version-title">Preguntes</div>
+            <p>Què? · Com? · Per què? + <strong>QUI?</strong> (identitat)</p>
+          </div>
+          <div class="version-card highlight">
+            <div class="version-title">Llenguatge</div>
+            <p>«Dissenyar opcions per a...» — centrat en l'aprenent</p>
+          </div>
+          <div class="version-card highlight">
+            <div class="version-title">Funció executiva</div>
+            <p>Reestructurada horitzontalment als 3 principis</p>
+          </div>
+          <div class="version-card highlight">
+            <div class="version-title">Barreres</div>
+            <p>Físiques, curriculars + <strong>biaixos individuals, institucionals i sistèmics</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Taula comparativa -->
+      <section class="intro-card">
+        <h2><i class="bi bi-table me-2"></i>Taula comparativa</h2>
+        <p>Comparació detallada dels aspectes clau de cada versió.</p>
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Aspecte</th>
+                <th>DUA 2.0 / 2.2</th>
+                <th>DUA 3.0</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Objectiu</td>
+                <td>Aprenents experts</td>
+                <td class="cell-new">Agentivitat de l'aprenent</td>
+              </tr>
+              <tr>
+                <td>Pregunta clau</td>
+                <td>Què? Com? Per què?</td>
+                <td class="cell-new">+ <strong>Qui?</strong> (identitat com a variabilitat)</td>
+              </tr>
+              <tr>
+                <td>Llenguatge</td>
+                <td>«Proporcionar opcions de...»</td>
+                <td class="cell-new">«Dissenyar opcions per a...»</td>
+              </tr>
+              <tr>
+                <td>Punts / Consideracions</td>
+                <td>31 punts de verificació</td>
+                <td class="cell-new">35 consideracions (4 de noves)</td>
+              </tr>
+              <tr>
+                <td>Barreres</td>
+                <td>Físiques i curriculars</td>
+                <td class="cell-new">+ Biaixos individuals, institucionals, sistèmics</td>
+              </tr>
+              <tr>
+                <td>Aprenentatge</td>
+                <td>Individual</td>
+                <td class="cell-new">Col·lectiu i interdependent</td>
+              </tr>
+              <tr>
+                <td>Destinatari del llenguatge</td>
+                <td>Centrat en el docent</td>
+                <td class="cell-new">Centrat en l'aprenent</td>
+              </tr>
+              <tr>
+                <td>Compromís (Per què)</td>
+                <td>Captar interès, mantenir esforç, autorregulació</td>
+                <td class="cell-new">Acollir interessos i identitats, pertinença, <strong>alegria, joc</strong>; creixement emocional</td>
+              </tr>
+              <tr>
+                <td>Representació (Què)</td>
+                <td>Percepció, llenguatge, comprensió</td>
+                <td class="cell-new">+ Perspectives i identitats diverses, <strong>múltiples formes de conèixer</strong></td>
+              </tr>
+              <tr>
+                <td>Acció i Expressió (Com)</td>
+                <td>Acció física, expressió, funció executiva</td>
+                <td class="cell-new"><strong>Interacció</strong> (no acció física), + formes d'expressió històricament silenciades</td>
+              </tr>
+              <tr>
+                <td>Funció executiva</td>
+                <td>Una pauta dins Acció i Expressió</td>
+                <td class="cell-new">Reestructurada horitzontalment als 3 principis (Access · Support · Executive Function)</td>
+              </tr>
+              <tr>
+                <td>Organització horitzontal</td>
+                <td>No existia</td>
+                <td class="cell-new">Access · Support · Executive Function</td>
+              </tr>
+              <tr>
+                <td>Tecnologia</td>
+                <td>Eina de suport</td>
+                <td class="cell-new">Part central de l'aprenentatge (IA, apps adaptatives)</td>
+              </tr>
+              <tr>
+                <td>Avaluació</td>
+                <td>Al final del procés</td>
+                <td class="cell-new"><strong>Acompanyament continu</strong>: feedback constant, autoevaluació, coevaluació</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Novetats clau del DUA 3.0 -->
+      <section class="intro-card">
+        <h2><i class="bi bi-stars me-2"></i>Novetats clau del DUA 3.0</h2>
+        <p>Deu aportacions fonamentals que transformen el marc DUA.</p>
+        <div class="novelties-grid">
+          <div class="novelty-card">
+            <div class="novelty-badge">1</div>
+            <i class="novelty-icon bi bi-person-badge"></i>
+            <h4>Identitat com a variabilitat</h4>
+            <p>El <strong>QUI</strong> de l'aprenentatge. Les identitats múltiples i interseccionals de l'alumnat es reconeixen com a part essencial de la variabilitat humana.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">2</div>
+            <i class="novelty-icon bi bi-star"></i>
+            <h4>Agentivitat de l'aprenent</h4>
+            <p>Se substitueix l'«aprenent expert» per l'<strong>agentivitat</strong>: l'aprenent pren el control del seu aprenentatge amb propòsit, reflexió i acció.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">3</div>
+            <i class="novelty-icon bi bi-shield-exclamation"></i>
+            <h4>Biaixos i equitat</h4>
+            <p>Reconeixement actiu dels <strong>biaixos individuals, institucionals i sistèmics</strong> com a barreres per a l'aprenentatge sense límits.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">4</div>
+            <i class="novelty-icon bi bi-people"></i>
+            <h4>Interdependència</h4>
+            <p>L'aprenentatge deixa de ser purament individual per esdevenir <strong>col·lectiu i interdependent</strong>, basat en la col·laboració i el suport mutu.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">5</div>
+            <i class="novelty-icon bi bi-heart"></i>
+            <h4>Pertinença i comunitat</h4>
+            <p>Foment actiu del <strong>sentiment de pertinença</strong> i de comunitat com a element fonamental del compromís amb l'aprenentatge.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">6</div>
+            <i class="novelty-icon bi bi-emoji-smile"></i>
+            <h4>Alegria i joc</h4>
+            <p>S'introdueixen l'<strong>alegria</strong> i el <strong>joc</strong> com a elements clau per acollir els interessos i les identitats de l'alumnat.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">7</div>
+            <i class="novelty-icon bi bi-flower1"></i>
+            <h4>Creixement emocional</h4>
+            <p>L'«autorregulació» esdevé <strong>creixement emocional</strong>: reconèixer expectatives, desenvolupar consciència d'un mateix i dels altres.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">8</div>
+            <i class="novelty-icon bi bi-globe"></i>
+            <h4>Múltiples formes de conèixer</h4>
+            <p>Es valoren formes de coneixement <strong>més enllà dels enfocaments occidentals</strong>, incorporant perspectives indígenes i diverses.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">9</div>
+            <i class="novelty-icon bi bi-chat-square-text"></i>
+            <h4>Llenguatge centrat en l'aprenent</h4>
+            <p>De «proporcionar» a «dissenyar». Les pautes passen a ser una eina que pot utilitzar tant el docent com <strong>l'aprenent</strong>.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">10</div>
+            <i class="novelty-icon bi bi-diagram-3"></i>
+            <h4>35 consideracions</h4>
+            <p>Els punts de verificació es reformulen com a <strong>consideracions</strong> (35 en total: 31 reformulades + 4 de noves), sense numeració rígida.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline evolutiu -->
+      <section class="intro-card">
+        <h2><i class="bi bi-clock-history me-2"></i>Evolució del DUA</h2>
+        <p>Línia del temps de les versions publicades per CAST.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2008</div>
+            <div class="timeline-content">
+              <strong>DUA 1.0</strong>
+              <p>Primera versió de les pautes CAST</p>
+            </div>
+          </div>
+          <div class="timeline-item highlight">
+            <div class="timeline-year">2011</div>
+            <div class="timeline-content">
+              <strong>DUA 2.0</strong>
+              <p>Actualització amb noves pautes i punts de verificació</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-content">
+              <strong>DUA 2.2</strong>
+              <p>Refinament de la versió 2.0</p>
+            </div>
+          </div>
+          <div class="timeline-item current">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <strong>DUA 3.0</strong>
+              <p>Canvi de paradigma: agentivitat, identitat, equitat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======================== -->
+    <!-- TAB: DUA 3.0             -->
+    <!-- ======================== -->
+    <div id="tab-dua30" class="tab-content">
+
+      <!-- Introducció -->
+      <section class="intro-card mt-4">
+        <h2><i class="bi bi-3-square-fill me-2"></i>DUA 3.0 — El marc actualitzat (CAST, 2024)</h2>
+        <p>
+          El <strong>30 de juliol de 2024</strong>, CAST va publicar la versió 3.0 de les pautes DUA,
+          la revisió més profunda des de la versió 2.0. L'objectiu ja no és formar «aprenents experts»
+          sinó cultivar l'<strong>agentivitat de l'aprenent</strong> (<em>learner agency</em>): estudiants
+          amb propòsit i reflexius, enginyosos i autèntics, estratègics i orientats a l'acció.
+        </p>
+        <p>
+          La gran novetat és la incorporació del <strong>QUI</strong> de l'aprenentatge: la identitat com a
+          part central de la variabilitat humana. El marc s'organitza en <strong>3 principis · 9 pautes ·
+          <em>36 consideracions</em></strong>, amb una estructura horitzontal nova que travessa cada principi:
+          <strong>Accés</strong> (Access) → <strong>Suport</strong> (Support) → <strong>Funció Executiva</strong> (Executive Function).
+        </p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- PRINCIPI 1: REPRESENTACIÓ                                     -->
+      <!-- ============================================================ -->
+      <section class="principle-section" data-principle="representacio">
+        <h2 class="principle-heading" data-principle="representacio">
+          <i class="bi bi-eye-fill"></i> Representació — El QUÈ de l'aprenentatge
+        </h2>
+        <p class="principle-desc">
+          Dissenyar múltiples formes de representació per donar resposta a les diferències en com l'alumnat percep i comprèn la informació.
+        </p>
+
+        <div class="dua30-grid">
+
+          <!-- Pauta 1: Percepció (Accés) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge access-badge">Accés</span>
+            <h4><i class="bi bi-1-circle me-1"></i> Percepció</h4>
+            <p>Oferir informació a través de múltiples canals sensorials i perspectives diverses.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">1.1</span>
+                <span class="cons-text">Apoyar les oportunitats per personalitzar la presentació de la informació (tipografia, mida, color, espaiat)</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">1.2</span>
+                <span class="cons-text">Apoyar múltiples formes de percebre la informació (auditiva, visual, tàctil)</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">1.3</span>
+                <span class="cons-text">Representar una diversitat de perspectives i identitats de maneres autèntiques</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pauta 2: Llenguatge i símbols (Suport) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge support-badge">Suport</span>
+            <h4><i class="bi bi-2-circle me-1"></i> Llenguatge i símbols</h4>
+            <p>Aclarir el vocabulari, l'estructura lingüística i abordar els biaixos en l'ús del llenguatge.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">2.1</span>
+                <span class="cons-text">Aclarir vocabulari, símbols i estructures lingüístiques</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">2.2</span>
+                <span class="cons-text">Respaldar la comprensió de textos, notacions matemàtiques i símbols</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">2.3</span>
+                <span class="cons-text">Promoure la comprensió i el respecte entre llengües i dialectes</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">2.4</span>
+                <span class="cons-text">Abordar els biaixos en l'ús del llenguatge i els símbols</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">2.5</span>
+                <span class="cons-text">Il·lustrar a través de múltiples mitjans (visuals, àudio, manipulables)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pauta 3: Construcció del coneixement (F. Executiva) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge exec-badge">F. Executiva</span>
+            <h4><i class="bi bi-3-circle me-1"></i> Construcció del coneixement</h4>
+            <p>Guiar el processament de la informació i connectar el nou aprenentatge amb coneixements previs.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">3.1</span>
+                <span class="cons-text">Connectar el coneixement previ amb el nou aprenentatge</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">3.2</span>
+                <span class="cons-text">Resaltar i explorar patrons, característiques clau, idees rellevants i relacions</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">3.3</span>
+                <span class="cons-text">Fomentar múltiples formes de coneixement i creació de significat</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">3.4</span>
+                <span class="cons-text">Maximitzar la transferència i la generalització</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- PRINCIPI 2: ACCIÓ I EXPRESSIÓ                                 -->
+      <!-- ============================================================ -->
+      <section class="principle-section" data-principle="accio">
+        <h2 class="principle-heading" data-principle="accio">
+          <i class="bi bi-hand-index-thumb-fill"></i> Acció i Expressió — El COM de l'aprenentatge
+        </h2>
+        <p class="principle-desc">
+          Oferir múltiples formes d'interacció i expressió perquè cada estudiant pugui demostrar el seu aprenentatge.
+        </p>
+
+        <div class="dua30-grid">
+
+          <!-- Pauta 4: Interacció (Accés) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge access-badge">Accés</span>
+            <h4><i class="bi bi-4-circle me-1"></i> Interacció</h4>
+            <p>Diversificar les maneres com l'alumnat interactua amb els materials i l'entorn.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">4.1</span>
+                <span class="cons-text">Diversificar i valorar els mètodes de resposta, navegació i moviment</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">4.2</span>
+                <span class="cons-text">Optimitzar l'accés a materials accessibles i tecnologies d'assistència</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pauta 5: Expressió i comunicació (Suport) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge support-badge">Suport</span>
+            <h4><i class="bi bi-5-circle me-1"></i> Expressió i comunicació</h4>
+            <p>Oferir eines i formats diversos per comunicar idees i crear significat.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">5.1</span>
+                <span class="cons-text">Usar múltiples mitjans per a la comunicació</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">5.2</span>
+                <span class="cons-text">Usar múltiples eines per a la construcció, composició i creativitat</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">5.3</span>
+                <span class="cons-text">Desenvolupar fluïdesa amb suport gradual per a la pràctica i el rendiment</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">5.4</span>
+                <span class="cons-text">Abordar els biaixos relacionats amb els modes d'expressió i comunicació</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pauta 6: Desenvolupament d'estratègies (F. Executiva) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge exec-badge">F. Executiva</span>
+            <h4><i class="bi bi-6-circle me-1"></i> Desenvolupament d'estratègies</h4>
+            <p>Donar suport a la planificació, l'organització i el monitoratge del propi aprenentatge.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">6.1</span>
+                <span class="cons-text">Establir objectius significatius</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">6.2</span>
+                <span class="cons-text">Planificar i anticipar els desafiaments</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">6.3</span>
+                <span class="cons-text">Organitzar la informació i els recursos</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">6.4</span>
+                <span class="cons-text">Millorar la capacitat per controlar el progrés</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">6.5</span>
+                <span class="cons-text">Desafiar les pràctiques excloents</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- PRINCIPI 3: COMPROMÍS                                         -->
+      <!-- ============================================================ -->
+      <section class="principle-section" data-principle="compromis">
+        <h2 class="principle-heading" data-principle="compromis">
+          <i class="bi bi-heart-fill"></i> Compromís — El PER QUÈ de l'aprenentatge
+        </h2>
+        <p class="principle-desc">
+          Oferir múltiples formes d'implicació i motivació per connectar amb els interessos, les identitats i les emocions de cada estudiant.
+        </p>
+
+        <div class="dua30-grid">
+
+          <!-- Pauta 7: Acollir interessos i identitats (Accés) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge access-badge">Accés</span>
+            <h4><i class="bi bi-7-circle me-1"></i> Acollir interessos i identitats</h4>
+            <p>Connectar amb els interessos individuals i crear un entorn segur i acollidor.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">7.1</span>
+                <span class="cons-text">Optimitzar l'elecció i l'autonomia</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">7.2</span>
+                <span class="cons-text">Optimitzar la rellevància, el valor i l'autenticitat</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">7.3</span>
+                <span class="cons-text">Promoure l'alegria i el joc</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">7.4</span>
+                <span class="cons-text">Abordar els biaixos, les amenaces i les distraccions</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pauta 8: Mantenir l'esforç i la constància (Suport) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge support-badge">Suport</span>
+            <h4><i class="bi bi-8-circle me-1"></i> Mantenir l'esforç i la constància</h4>
+            <p>Establir objectius clars i oferir reptes adequats, col·laboració i retroalimentació.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">8.1</span>
+                <span class="cons-text">Aclarir el significat i el propòsit dels objectius</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">8.2</span>
+                <span class="cons-text">Optimitzar els desafiaments i el suport</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">8.3</span>
+                <span class="cons-text">Fomentar la col·laboració, la interdependència i l'aprenentatge col·lectiu</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">8.4</span>
+                <span class="cons-text">Fomentar la pertinença i la comunitat</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">8.5</span>
+                <span class="cons-text">Oferir retroalimentació orientada a l'acció</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pauta 9: Capacitat emocional (F. Executiva) -->
+          <div class="guideline-card">
+            <span class="horizontal-badge exec-badge">F. Executiva</span>
+            <h4><i class="bi bi-9-circle me-1"></i> Capacitat emocional</h4>
+            <p>Desenvolupar habilitats per gestionar les emocions, la motivació i les relacions amb els altres.</p>
+            <ul class="consideration-list">
+              <li class="consideration-item">
+                <span class="cons-number">9.1</span>
+                <span class="cons-text">Reconèixer expectatives, creences i motivacions</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">9.2</span>
+                <span class="cons-text">Desenvolupar consciència d'un mateix i dels altres</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">9.3</span>
+                <span class="cons-text">Promoure la reflexió individual i col·lectiva</span>
+              </li>
+              <li class="consideration-item">
+                <span class="cons-number">9.4</span>
+                <span class="cons-text">Fomentar l'empatia i les pràctiques restauratives</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Resum numèric -->
+      <section class="intro-card">
+        <h2><i class="bi bi-bar-chart-steps me-2"></i>Resum de l'estructura DUA 3.0</h2>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <div class="summary-number">3</div>
+            <div class="summary-label">Principis</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number">9</div>
+            <div class="summary-label">Pautes</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number">36</div>
+            <div class="summary-label">Consideracions</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-number">3</div>
+            <div class="summary-label">Nivells horitzontals<br><small>Accés · Suport · F. Executiva</small></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Novetats clau -->
+      <section class="intro-card">
+        <h2><i class="bi bi-stars me-2"></i>Què canvia respecte al DUA 2.0?</h2>
+        <div class="novelties-grid">
+          <div class="novelty-card">
+            <div class="novelty-badge">1</div>
+            <i class="novelty-icon bi bi-person-badge"></i>
+            <h4>Identitat com a variabilitat</h4>
+            <p>El <strong>QUI</strong> de l'aprenentatge. Les identitats múltiples i interseccionals es reconeixen com a part essencial de la variabilitat humana.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">2</div>
+            <i class="novelty-icon bi bi-star"></i>
+            <h4>Agentivitat de l'aprenent</h4>
+            <p>Se substitueix l'«aprenent expert» per l'<strong>agentivitat</strong>: l'aprenent pren el control del seu propi aprenentatge.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">3</div>
+            <i class="novelty-icon bi bi-diagram-3"></i>
+            <h4>Estructura horitzontal</h4>
+            <p>Cada principi s'organitza en <strong>Accés · Suport · Funció Executiva</strong>, una novetat estructural fonamental.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">4</div>
+            <i class="novelty-icon bi bi-shield-exclamation"></i>
+            <h4>Biaixos i equitat</h4>
+            <p>Reconeixement actiu dels <strong>biaixos individuals, institucionals i sistèmics</strong> com a barreres per a l'aprenentatge.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">5</div>
+            <i class="novelty-icon bi bi-people"></i>
+            <h4>Interdependència</h4>
+            <p>L'aprenentatge deixa de ser purament individual per esdevenir <strong>col·lectiu i interdependent</strong>.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">6</div>
+            <i class="novelty-icon bi bi-heart"></i>
+            <h4>Pertinença i comunitat</h4>
+            <p>Foment actiu del <strong>sentiment de pertinença</strong> com a element fonamental del compromís.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">7</div>
+            <i class="novelty-icon bi bi-emoji-smile"></i>
+            <h4>Alegria i joc</h4>
+            <p>S'introdueixen l'<strong>alegria</strong> i el <strong>joc</strong> com a elements clau per a l'aprenentatge.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">8</div>
+            <i class="novelty-icon bi bi-flower1"></i>
+            <h4>Creixement emocional</h4>
+            <p>L'«autorregulació» esdevé <strong>capacitat emocional</strong>: empatia, pràctiques restauratives i reflexió.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">9</div>
+            <i class="novelty-icon bi bi-globe"></i>
+            <h4>Múltiples formes de conèixer</h4>
+            <p>Es valoren formes de coneixement <strong>més enllà dels enfocaments occidentals</strong>.</p>
+          </div>
+          <div class="novelty-card">
+            <div class="novelty-badge">10</div>
+            <i class="novelty-icon bi bi-chat-square-text"></i>
+            <h4>Llenguatge centrat en l'aprenent</h4>
+            <p>De «proporcionar» a «dissenyar». Les pautes poden ser utilitzades tant pel docent com per l'<strong>aprenent</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======================== -->
+    <!-- TAB: BIBLIOGRAFIA         -->
+    <!-- ======================== -->
+    <div id="tab-bibliografia" class="tab-content">
+
+      <section class="intro-card mt-4">
+        <h2><i class="bi bi-bookmarks me-2"></i>Bibliografia</h2>
+        <p>Llista de referències bibliogràfiques sobre el Disseny Universal de l'Aprenentatge (DUA) en format APA (7a edició).</p>
+      </section>
+
+      <section class="biblio-card">
+        <ol class="biblio-list">
+
+          <li class="biblio-item">Al-Azawei, A., Parslow, P., &amp; Lundqvist, K. (2017). The effect of universal design for learning (UDL) application on e-learning acceptance: A structural equation model. <i>International Review of Research in Open and Distributed Learning</i>, <i>18</i>(6), 54–87. <a href="https://doi.org/10.19173/irrodl.v18i6.2880" target="_blank">https://doi.org/10.19173/irrodl.v18i6.2880</a></li>
+
+          <li class="biblio-item">Alba Pastor, C. (2012). Aportacions del Disseny Universal per a l'Aprenentatge i dels materials digitals en el lograment d'una ensenyança accessible. <i>Revista @gora Digit@l</i>, <i>11</i>(1), 3–27.</li>
+
+          <li class="biblio-item">Alba Pastor, C. (Coord.). (2014). <i>Disseny Universal per a l'Aprenentatge (DUA): Pautes per a la seua introducció en el currículum</i>. Edicions de la Universitat Autònoma de Madrid.</li>
+
+          <li class="biblio-item">Alba Pastor, C. (2019). <i>Disseny Universal per a l'Aprenentatge: Un model teoricopràctic per a una educació inclusiva de qualitat</i>. Universitat Autònoma de Madrid.</li>
+
+          <li class="biblio-item">Basham, J. D., &amp; Marino, M. T. (2013). Understanding STEM education and supporting students through universal design for learning. <i>Teaching Exceptional Children</i>, <i>45</i>(4), 8–15. <a href="https://doi.org/10.1177/004005991304500401" target="_blank">https://doi.org/10.1177/004005991304500401</a></li>
+
+          <li class="biblio-item">CAST. (2011). <i>Universal design for learning guidelines version 2.0</i>. Wakefield, MA: Author. <a href="https://udlguidelines.cast.org" target="_blank">https://udlguidelines.cast.org</a></li>
+
+          <li class="biblio-item">CAST. (2018). <i>Universal design for learning guidelines version 2.2</i>. Wakefield, MA: Author. <a href="https://udlguidelines.cast.org" target="_blank">https://udlguidelines.cast.org</a></li>
+
+          <li class="biblio-item">CAST. (2024). <i>Universal design for learning guidelines version 3.0</i>. Wakefield, MA: Author. <a href="https://udlguidelines.cast.org" target="_blank">https://udlguidelines.cast.org</a></li>
+
+          <li class="biblio-item">Courey, S. J., Tappe, P., Siker, J., &amp; LePage, P. (2013). Improved lesson planning with universal design for learning (UDL). <i>Teacher Education and Special Education</i>, <i>36</i>(1), 7–27. <a href="https://doi.org/10.1177/0888406412446178" target="_blank">https://doi.org/10.1177/0888406412446178</a></li>
+
+          <li class="biblio-item">De la Fuente-González, S., Menéndez Álvarez-Hevia, D., &amp; Rodríguez-Martín, A. (2025). Disseny Universal per a l'Aprenentatge: Una revisió sistemàtica del seu paper en la formació docent. <i>Alteridad</i>, <i>20</i>(1), 113–128. <a href="https://doi.org/10.17163/alt.v20n1.2025.09" target="_blank">https://doi.org/10.17163/alt.v20n1.2025.09</a></li>
+
+          <li class="biblio-item">Elizondo Carmona, C. (2020). <i>Cap a la inclusió educativa a la universitat: Disseny Universal per a l'Aprenentatge i l'educació de qualitat</i>. Octaedro.</li>
+
+          <li class="biblio-item">Hall, T. E., Meyer, A., &amp; Rose, D. H. (Eds.). (2012). <i>Universal design for learning in the classroom: Practical applications</i>. Guilford Press.</li>
+
+          <li class="biblio-item">Hitchcock, C., Meyer, A., Rose, D., &amp; Jackson, R. (2002). Providing new access to the general curriculum: Universal design for learning. <i>Teaching Exceptional Children</i>, <i>35</i>(2), 8–17. <a href="https://doi.org/10.1177/004005990203500201" target="_blank">https://doi.org/10.1177/004005990203500201</a></li>
+
+          <li class="biblio-item">Katz, J. (2013). The three block model of universal design for learning (UDL): Engaging students in inclusive education. <i>Canadian Journal of Education</i>, <i>36</i>(1), 153–194.</li>
+
+          <li class="biblio-item">King-Sears, M. (2009). Universal design for learning: Technology and pedagogy. <i>Learning Disability Quarterly</i>, <i>32</i>(4), 199–201. <a href="https://doi.org/10.2307/27740372" target="_blank">https://doi.org/10.2307/27740372</a></li>
+
+          <li class="biblio-item">Márquez Ordóñez, A. A. (2021). <i>DUA: Disseny Universal per a l'Aprenentatge: Guia pràctica per a la implementació a l'aula</i>. Universitat Autònoma de Madrid.</li>
+
+          <li class="biblio-item">Meyer, A., Rose, D. H., &amp; Gordon, D. (2014). <i>Universal design for learning: Theory and practice</i>. CAST Professional Publishing. <a href="https://www.cast.org" target="_blank">https://www.cast.org</a></li>
+
+          <li class="biblio-item">Novak, K. (2016). <i>UDL now!: A teacher's guide to applying universal design for learning in today's classrooms</i>. CAST Professional Publishing.</li>
+
+          <li class="biblio-item">Rao, K., Gravel, J. W., Rose, D. H., &amp; Tucker-Smith, T. N. (2023). Universal design for learning in its 3rd decade: A focus on equity, inclusion, and design. En <i>International encyclopedia of education</i> (Vol. 6, pp. 712–720). Elsevier. <a href="https://doi.org/10.1016/B978-0-12-818630-5.14079-5" target="_blank">https://doi.org/10.1016/B978-0-12-818630-5.14079-5</a></li>
+
+          <li class="biblio-item">Rao, K., Ok, M. W., &amp; Bryant, B. R. (2014). A review of research on universal design educational models. <i>Remedial and Special Education</i>, <i>35</i>(3), 153–166. <a href="https://doi.org/10.1177/0741932513518980" target="_blank">https://doi.org/10.1177/0741932513518980</a></li>
+
+          <li class="biblio-item">Rose, D. H., &amp; Meyer, A. (2002). <i>Teaching every student in the digital age: Universal design for learning</i>. ASCD.</li>
+
+          <li class="biblio-item">Rose, D. H., Meyer, A., &amp; Hitchcock, C. (Eds.). (2005). <i>The universally designed classroom: Accessible curriculum and digital technologies</i>. Harvard Education Press.</li>
+
+          <li class="biblio-item">Rose, D. H., Harbour, W. S., Johnston, C. S., Daley, S. G., &amp; Abarbanell, L. (2006). Universal design for learning in postsecondary education: Reflections on principles and their application. <i>Journal of Postsecondary Education and Disability</i>, <i>19</i>(2), 135–151.</li>
+
+          <li class="biblio-item">Sánchez Serrano, J. M. (2021). El Disseny Universal per a l'Aprenentatge (DUA) com a eina per a la inclusió educativa. <i>Revista Nacional i Internacional d'Educació Inclusiva</i>, <i>14</i>(1), 45–60.</li>
+
+          <li class="biblio-item">Schreffler, J., Vasquez III, E., Chini, J., &amp; James, W. (2019). Universal design for learning in postsecondary STEM education for students with disabilities: A systematic literature review. <i>International Journal of STEM Education</i>, <i>6</i>(8), 1–10. <a href="https://doi.org/10.1186/s40594-019-0161-8" target="_blank">https://doi.org/10.1186/s40594-019-0161-8</a></li>
+
+        </ol>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
