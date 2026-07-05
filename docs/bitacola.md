@@ -19,3 +19,6 @@ Es crea una estructura de densenvolupament del repositori que inclou dues carpet
   - `docs`: Documentació
 
 Es canvia nom del repositori de DUA a dua per tal de millorar l'accessibilitat amb el teclat.
+
+Es retorna el codi des de `src` a l'arrel perquè el desplegament al GitHub falla.
+
