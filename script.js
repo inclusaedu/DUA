@@ -240,6 +240,17 @@ function submitQuiz() {
         label.appendChild(icon);
       }
     });
+
+    const feedback = document.createElement('div');
+    feedback.className = 'question-feedback';
+    if (isCorrect) {
+      feedback.textContent = '✓ Correcte';
+      feedback.style.color = 'var(--success)';
+    } else {
+      feedback.textContent = `✗ Incorrecte. Resposta correcta: "${q.options[q.correct]}"`;
+      feedback.style.color = 'var(--danger)';
+    }
+    card.appendChild(feedback);
   });
 
   const score = Math.round((correctCount / questions.length) * 100);

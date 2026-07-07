@@ -448,6 +448,23 @@ p {
   font-weight: 700;
 }
 
+.question-feedback {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.question-card.correct .question-feedback {
+  background: var(--success-bg);
+}
+
+.question-card.incorrect .question-feedback {
+  background: var(--danger-bg);
+}
+
 /* Result */
 #quiz-result {
   display: none;
