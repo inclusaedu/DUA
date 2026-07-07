@@ -450,11 +450,12 @@ p {
 
 .question-feedback {
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.95rem;
-  text-align: center;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .question-card.correct .question-feedback {
@@ -544,6 +545,17 @@ p {
 #resetQuiz:hover {
   background: var(--primary);
   color: #fff;
+}
+
+/* Quiz container transition */
+#quiz-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.quiz-buttons {
+  transition: opacity 0.2s ease;
 }
 
 /* Animations */
