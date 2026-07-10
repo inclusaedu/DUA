@@ -6,7 +6,7 @@
   <title>DUA — Disseny Universal de l'Aprenentatge</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-theme="light">
   <div class="container py-4">
@@ -58,17 +58,8 @@
     <!-- ======================== -->
     <div id="tab-teoria" class="tab-content active">
 
-      <!-- Paquet SCORM -->
-      <section class="intro-card mt-4">
-        <h2><i class="bi bi-box-arrow-down me-2"></i>Paquet SCORM</h2>
-        <p>Descarregueu el paquet SCORM per importar-lo a Moodle o una altra plataforma LMS:</p>
-        <a href="src/scorm.zip" class="btn btn-primary">
-          <i class="bi bi-download me-1"></i>Descarregar SCORM 1.2
-        </a>
-      </section>
-
       <!-- Introducció -->
-      <section class="intro-card">
+      <section class="intro-card mt-4">
         <h2>Què és el DUA?</h2>
         <p>
           El <strong>Disseny Universal de l'Aprenentatge</strong> (DUA) és un marc educatiu basat en la investigació
@@ -464,7 +455,7 @@
         <h2><i class="bi bi-3-square me-2"></i>DUA 3.0 (2024)</h2>
         <p>
           La versió 3.0 representa un <strong>canvi de paradigma</strong>. L'objectiu ja no és formar «aprenents
-          experts» sinó cultivar l'<strong>agentivitat de l'aprenent</strong> (learner agency): estudiants
+          experts» sinó cultivar l'<strong>agentivitat de l'aprenent</strong> (<em>learner agency</em>): estudiants
           amb propòsit i reflexius, enginyosos i autèntics, estratègics i orientats a l'acció. El canvi
           fonamental és la incorporació del <strong>QUI</strong> de l'aprenentatge: la identitat com a part
           central de la variabilitat humana.
@@ -1150,6 +1141,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="scorm_api.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
